@@ -496,3 +496,64 @@ footer li{
 }
 
 /******************************** sources.html *********************************/
+
+.sources{
+
+}
+
+.sources img{
+  max-width: 100%;
+}
+.table-area {
+  overflow-x: scroll;
+  box-shadow: 0 0 6px rgba(0,0,0,.3);
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+tbody tr :nth-child(1) {
+  color: rgb(2, 2, 100);
+  font-weight: 600;
+  text-align: center;
+}
+
+th{
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+  background: rgb(44, 44, 175);
+  border: 1px solid black;
+  padding: 1rem 1.5rem;
+}
+
+table td{
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+thead th:nth-child(1) {
+  width: 15%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 65%;
+}
+
+@media screen and (min-width:1000px) {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table-area {
+    overflow-x: unset;
+  }
+
+  table td{
+    white-space: unset;
+  }
+}
