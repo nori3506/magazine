@@ -674,9 +674,11 @@ footer li{
 
 
 
-
-
 /******************************** article.html *********************************/
+.article-show {
+  padding: 1rem;
+}
+
 .article-show p {
   font-size: 2rem;
 }
@@ -742,13 +744,41 @@ footer li{
 
 .suit-with-sunglass-img{
   margin: auto;
-  width: 55%;
+  width: 65%;
+}
+
+.toggle-display{
+  display: none;
 }
 
 @media screen and (max-width: 1130px){
   .article-title{
     font-size: 2rem;
     
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .article-second-para-grid1{
+    display: block;
+  }
+
+  .article-second-para-grid2{
+    display: block;
+  }
+
+  .suit-with-sunglass-img{
+    display: block;
+    margin: auto;
+    width: 60%;
+  }
+
+  .toggle-hidden{
+    display: none;
+  }
+
+  .toggle-display{
+    display: block;
   }
 }
 
