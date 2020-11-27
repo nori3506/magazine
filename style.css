@@ -1,20 +1,35 @@
 /******************************** Common ***********************************/
-
-html{
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Markazi+Text&display=swap');
 
 body{
   margin: 0;
   background: #c7c7c7;
+  font-family: 'Markazi Text';
+  font-size: 1.5rem;
 }
 a{
+  color: #000;
   text-decoration: none;
 }
 li{
   list-style: none;
 }
 
-/******************************** index.html ***********************************/
+h1, h2 {
+  font-family: 'Libre Caslon Text';
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/***************** header / nav ********************/
+
 #top-header{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -26,6 +41,14 @@ li{
     padding-left: 2rem;
 }
 
+.slogan {
+  font-family: 'Libre Caslon Text';
+  font-size: 1.3rem;
+}
+
+.magazine-title{
+  font-size: 2.3rem;
+}
 
 .search-area{
   padding-right: 2rem;
@@ -51,14 +74,10 @@ li{
   text-align: center;
   margin-top: 0;
 }
+
 #top-nav li{
   display: inline-block;
   padding: 1rem 2rem;
-}
-
-.wrapper{
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 @media screen and (max-width:1000px){
@@ -125,6 +144,44 @@ li{
 }
 
 
+/***************** footer ********************/
+footer{
+  padding: 2rem 0;
+  height: 5rem;
+  background-color: rgb(29, 26, 26);
+}
+
+.copyright{
+  color: white;
+  text-align: center;
+  background-color: rgb(29, 26, 26);
+  margin: 0;
+  padding: 1rem 0;
+
+}
+
+footer ul{
+  padding: 0rem;
+  background-color: rgb(29, 26, 26);
+  margin: 0;
+  text-align: center;
+}
+
+footer li{
+  margin: 1rem 0.5rem;
+  display: inline-block;
+  color: white;
+}
+
+
+/******************************** index.html ***********************************/
+
+.wrapper{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+
 /***************** section id="top-main" ********************/
 
 #top-main{
@@ -140,7 +197,7 @@ li{
 }
 
 .main-img-size{
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
 }
 
@@ -165,6 +222,15 @@ li{
     display: block;
   }
 
+  .main-img-size{
+    margin-right: 10px;
+  }
+
+
+  .main-article a, .main-article h1 {
+    padding: 0 1rem;
+  }
+
   .side-area{
     margin-top: 1.5rem;
     display: grid;
@@ -173,6 +239,34 @@ li{
 
   .side-header{
     grid-column: 1 / 3;
+    position: relative;
+    font-size: 2.7rem;
+    margin-bottom: 3rem;
+  }
+
+  .sidebar-span {
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  .sidebar-span:before {
+    left: 14rem;
+    border-top: 1px solid;
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 103%;
+    color: #000;
+  }
+
+  .sidebar-span:after {
+    right: 14rem;
+    border-top: 1px solid;
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 103%;
+    color: #000;
   }
 
   .ranked-articles{
@@ -192,12 +286,33 @@ li{
     display: block;
   }
 
+  .side-header{
+    font-size: 2rem;
+  }
+
+  .sidebar-span:before {
+    left: 11rem;
+    width: 80%;
+  }
+
+  .sidebar-span:after {
+    right: 11rem;
+    width: 80%;
+  }
+
   .ranked-articles {
     width: 360px;
     padding: 1rem 0;
     border-bottom: 1px solid black;
   }
 }
+
+@media screen and (max-width: 500px){
+  .sidebar-span:before, .sidebar-span:after {
+    display: none;
+  }
+}
+
 
 @media screen and (max-width: 400px){
   .ranked-articles {
@@ -207,7 +322,7 @@ li{
 
 /***************** section id="articles" ********************/
 #articles{
-  margin: 3rem 0;
+  margin: 4rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -215,6 +330,35 @@ li{
 .articles-header{
   text-align: center;
   grid-column: 1 / 4;
+  position: relative;
+  font-size: 2.7rem;
+  margin-bottom: 3rem;
+  z-index: -1;
+}
+
+.article-span {
+  padding: 0 1rem;
+  position: relative;
+}
+
+.article-span:before {
+  left: 14rem;
+  border-top: 1px solid;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 107%;
+  color: #000;
+}
+
+.article-span:after {
+  right: 14rem;
+  border-top: 1px solid;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 107%;
+  color: #000;
 }
 
 .excerpt-article{
@@ -241,7 +385,7 @@ li{
 
 .published-date{
   color: #6f4242;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   text-align: right;
   margin-top: 0.4rem;
 }
@@ -274,16 +418,67 @@ li{
   .article-desctiption-grid{
     display: block;
   }
+
+  .articles-header{
+    font-size: 2rem;
+  }
+
+  .article-span:before {
+    left: 11rem;
+    width: 90%;
+  }
+
+  .article-span:after {
+    right: 11rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .article-span:before, .article-span:after {
+    display: none;
+  }
 }
 
 
 /***************** section id="interviews" ********************/
 #interviews{
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 #interviews{
   text-align: center;
+}
+
+.interview-header {
+  font-size: 2.7rem;
+  position: relative;
+  z-index: -1;
+}
+
+.interview-span{
+  padding: 0 1rem;
+  position: relative;
+}
+
+.interview-span:before {
+  left: 18rem;
+  border-top: 1px solid;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 70%;
+  color: #000;
+}
+
+.interview-span:after {
+  right: 18rem;
+  border-top: 1px solid;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 70%;
+  color: #000;
 }
 
 .interview-area{
@@ -332,19 +527,66 @@ li{
     margin: auto;
   }
 
+  .interview-header {
+    font-size: 2rem;
+  }
+
+  .interview-span:before {
+    left: 13rem;
+    width: 65%;
+  }
+
+  .interview-span:after {
+    right: 13rem;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .interview-span:before, .interview-span:after {
+    display: none;
+  }
 }
 
 
 /********************* section id="items" **************************/
 #items{
+  margin: 4rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 0.5rem
 }
 
-#items h1{
+.items-header {
+  font-size: 2.7rem;
   text-align: center;
   grid-column: 1 / 5;
+  z-index: -1;
+}
+
+.items-span{
+  padding: 0 1rem;
+  position: relative;
+}
+
+.items-span:before {
+  left: 21rem;
+  border-top: 1px solid;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 52%;
+  color: #000;
+}
+
+.items-span:after {
+  right: 21rem;
+  border-top: 1px solid;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 52%;
+  color: #000;
 }
 
 #items h2{
@@ -393,12 +635,34 @@ li{
   #items {
     display: block;
   }
+
   .item-area {
     width: 400px;
     padding: 1rem 0;
     border-bottom: black solid 1px;
   }
+
+  .items-header {
+    font-size: 2rem;
+  }
+
+  .items-span:before {
+    left: 16rem;
+    width: 43%;
+  }
+
+  .items-span:after {
+    right: 16rem;
+    width: 43%;
+  }
 }
+
+@media screen and (max-width: 500px){
+  .items-span:before, .items-span:after {
+    display: none;
+  }
+}
+
 
 @media screen and (max-width:450px){
   .item-area {
@@ -407,42 +671,37 @@ li{
 }
 
 
-/***************** footer ********************/
-footer{
-  height: 5rem;
-  background-color: rgb(29, 26, 26);
-}
 
-.copyright{
-  color: white;
-  text-align: center;
-  background-color: rgb(29, 26, 26);
-  margin: 0;
-  padding: 1rem 0;
-
-}
-
-footer ul{
-  margin: 0;
-  text-align: center;
-}
-
-footer li{
-  margin: 1rem 0.5rem;
-  display: inline-block;
-  color: white;
-}
 
 
 
 /******************************** article.html *********************************/
+.article-show p {
+  font-size: 2rem;
+}
 .article-wrapper{
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  margin: auto;
+  max-width: 1500px;
 }
 
-.article-main-img-size{
+.article-background{
+  background-image: url("images/model/men-in-suit-land.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 45rem;
+}
+
+.article-title{
+  background: #c7c7c7;
+  position: relative;
+  top: 25rem;
+  left: 2rem;
+  width: 65%;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 2.3rem;
+  padding: 1.7rem;
 
 }
 
