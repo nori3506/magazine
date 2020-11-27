@@ -687,6 +687,14 @@ footer li{
   max-width: 1500px;
 }
 
+.article-published-date{
+  color: #6f4242;
+  font-size: 1.3rem;
+  text-align: left;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
 .article-background{
   background-image: url("images/model/men-in-suit-land.png");
   background-position: center;
