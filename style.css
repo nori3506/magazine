@@ -28,6 +28,10 @@ h2 {
   font-size: 1.5rem;
 }
 
+.left-align{
+  text-align: left;
+}
+
 /***************** header / nav ********************/
 
 #top-header{
@@ -195,6 +199,10 @@ footer li{
 .main-article{
   width: 100%;
   display: inline-block;
+}
+
+.main-article p {
+  padding-left: 1rem;
 }
 
 .main-img-size{
