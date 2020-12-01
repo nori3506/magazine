@@ -535,28 +535,20 @@ footer li{
   grid-gap: 1rem;
 }
 
-.us-man-img {
-    background-image: url(images/model/us-man-land.jpg);
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-position: center top;
+.us-man-img, .european-man-img {
+  height: 250px;
+  width: 250px;
+  object-fit: none;
+  border-radius: 125px;
+  object-position: 52% 2%;
 }
 
-.asian-man-img {
-    background-image: url(images/model/asia-model-land.jpg);
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-position: 75% 30%;
-}
-
-.european-man-img {
-    background-image: url(images/model/europe-man-land.jpg);
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-position: center top;
+.asian-man-img{
+  height: 250px;
+  width: 250px;
+  object-fit: none;
+  border-radius: 125px;
+  object-position: 73% 28%;
 }
 
 .interview-area:not(:last-child) {
