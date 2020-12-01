@@ -178,18 +178,19 @@ footer li{
   color: white;
 }
 
-.footer-icon-size{
+.footer-icon{
+  color: white;
   font-size: 3em;
 }
 
 @media screen and (max-width: 500px){
-  .footer-icon-size{
+  .footer-icon{
     font-size: 2em;
   }
 }
 
 @media screen and (max-width: 370px){
-  .footer-icon-size{
+  .footer-icon{
     font-size: 1.5em;
   }
 }
