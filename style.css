@@ -178,6 +178,21 @@ footer li{
   color: white;
 }
 
+.footer-icon-size{
+  font-size: 3em;
+}
+
+@media screen and (max-width: 500px){
+  .footer-icon-size{
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 370px){
+  .footer-icon-size{
+    font-size: 1.5em;
+  }
+}
 
 /******************************** index.html ***********************************/
 
@@ -901,6 +916,16 @@ footer li{
   margin: auto;
   width: 65%;
   line-height: 1.3rem;
+}
+
+@media screen and (max-width: 500px){
+  .contact input, .contact textarea {
+    width: 90%;
+  }
+
+  .contact label {
+    width: 90%;
+  }
 }
 
 /******************************** sources.html *********************************/
