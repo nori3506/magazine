@@ -959,11 +959,11 @@ footer li{
 }
 
 /******************************** sources.html *********************************/
-.sources h1{
+.sources h2{
   padding-left: 1rem;
 }
 
-.sources h2{
+.sources h3{
   margin-bottom: 1rem
 }
 
