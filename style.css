@@ -967,6 +967,12 @@ footer li{
   margin-bottom: 1rem
 }
 
+.caption-font{
+  font-size: 2rem;
+  text-align: left;
+  margin: 1.5rem 0 0;
+}
+
 .sources img{
   max-width: 100%;
 }
