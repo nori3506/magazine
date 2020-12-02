@@ -1002,6 +1002,10 @@ table td{
   padding: 0.5rem;
 }
 
+table td a{
+  color: #252593;
+}
+
 thead th:nth-child(1) {
   width: 15%;
 }
@@ -1012,6 +1016,11 @@ thead th:nth-child(2) {
 
 thead th:nth-child(3) {
   width: 55%;
+}
+
+.external-link-icon{
+  font-size: 1rem;
+  margin-left: 0.4rem;
 }
 
 @media screen and (min-width:1000px) {
